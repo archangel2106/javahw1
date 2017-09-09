@@ -17,16 +17,16 @@ public class Eggs
     	double total_cost_of_Singles = (eggs%numb_of_Dozen)*singleEggsprice;   
     	double total_Cost = (total_of_Dozens + total_of_Singles);
        
-        System.out.println(eggs/numb_of_Dozen);
-        System.out.println(eggs%numb_of_Dozen);
+        sex = (eggs/numb_of_Dozen);
+        orgy = (eggs%numb_of_Dozen);
  
 	System.out.println(total_cost_of_Dozens);
     	System.out.println(total_cost_of_Singles);
     	System.out.println(total_Cost);
 		   
  	/*System.out.println("You ordered " + eggs + " eggs "); 
- 	System.out.println("That's " + (total_of_Dozens) + " dozen at $" + dozenEggsprice + " per dozen. "); 
- 	System.out.println("And that's " + (total_of_Singles) + " loose eggs at $" + singleEggsprice + " cents each. ");
+ 	System.out.println("That's " + sex + " dozen at $" + dozenEggsprice + " per dozen. "); 
+ 	System.out.println("And that's " + orgy + " loose eggs at $" + singleEggsprice + " cents each. ");
  	System.out.println("For a total of $" + total_Cost);*/
 	}
 }
