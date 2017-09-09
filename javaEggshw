@@ -14,10 +14,14 @@ public class Eggs
 	int total_count_of_loose_eggs = (eggs%numb_of_Dozen); 
     	int total_numb_of_Dozen = (eggs/numb_of_Dozen);
     	int total_numb_of_Single = (eggs%numb_of_Dozen);   
-    	double total_Cost = (total_numb_of_Dozen + total_numb_of_Single);
-	
-	
-	
+        double total_amount = (total_numb_of_Dozen + total_numb_of_Single);
+        
+        double total_cost_of_Dozens = total_count_of_dozen_eggs*dozenEggsprice;
+    	double total_cost_of_Singles = total_count_of_loose_eggs*singleEggsprice;   
+    	double total_Cost = (total_cost_of_Dozens + total_cost_of_Singles);
+
+    		
+        
  	System.out.println("You ordered " + eggs + " eggs "); 
  	System.out.println("That's " + (total_numb_of_Dozen) + " dozen at $" + dozenEggsprice + " per dozen. "); 
  	System.out.println("And that's " + (total_numb_of_Single) + " loose eggs at $" + singleEggsprice + " cents each. ");
