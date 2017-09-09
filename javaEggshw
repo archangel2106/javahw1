@@ -17,9 +17,9 @@ public class Eggs
     	double total_of_Single = (eggs%numb_of_Dozen)*singleEggsprice;   
     	double total_Cost = (total_of_Dozen + total_of_Single);
         
-	System.out.println(total_of_Dozen)
-    	System.out.println(total_of_Single)
-    	System.out.println(total_Cost)
+	System.out.println(total_of_Dozen);
+    	System.out.println(total_of_Single);
+    	System.out.println(total_Cost);
 		   
  	/*System.out.println("You ordered " + eggs + " eggs "); 
  	System.out.println("That's " + (total_of_Dozen) + " dozen at $" + dozenEggsprice + " per dozen. "); 
