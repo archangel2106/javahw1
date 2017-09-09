@@ -13,17 +13,17 @@ public class Eggs
     	Scanner imp = new Scanner (System.in);
     	System.out.print("How many eggs do you need?");
     	int eggs = imp.nextInt();
-    	double total_of_Dozen = (eggs/numb_of_Dozen)*dozenEggsprice;
-    	double total_of_Single = (eggs%numb_of_Dozen)*singleEggsprice;   
-    	double total_Cost = (total_of_Dozen + total_of_Single);
+    	double total_cost_of_Dozens = (eggs/numb_of_Dozen)*dozenEggsprice;
+    	double total_cost_of_Singles = (eggs%numb_of_Dozen)*singleEggsprice;   
+    	double total_Cost = (total_of_Dozens + total_of_Singles);
         
-	System.out.println(total_of_Dozen);
-    	System.out.println(total_of_Single);
+	System.out.println(total_of_Dozens);
+    	System.out.println(total_of_Singles);
     	System.out.println(total_Cost);
 		   
  	/*System.out.println("You ordered " + eggs + " eggs "); 
- 	System.out.println("That's " + (total_of_Dozen) + " dozen at $" + dozenEggsprice + " per dozen. "); 
- 	System.out.println("And that's " + (total_of_Single) + " loose eggs at $" + singleEggsprice + " cents each. ");
+ 	System.out.println("That's " + (total_of_Dozens) + " dozen at $" + dozenEggsprice + " per dozen. "); 
+ 	System.out.println("And that's " + (total_of_Singles) + " loose eggs at $" + singleEggsprice + " cents each. ");
  	System.out.println("For a total of $" + total_Cost);*/
 	}
 }
