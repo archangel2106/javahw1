@@ -13,8 +13,7 @@ public class Eggs
 	
     	int total_numb_of_Dozen = (eggs/numb_of_Dozen);
     	int total_numb_of_Single = (eggs%numb_of_Dozen);   
-        double total_numb_eggs = (total_numb_of_Dozen + total_numb_of_Single);
-        
+                
         double total_cost_of_Dozens = total_numb_of_Dozen*dozenEggsprice;
     	double total_cost_of_Singles = total_numb_of_Single*singleEggsprice;   
     	double total_Cost = (total_cost_of_Dozens + total_cost_of_Singles);
