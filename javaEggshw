@@ -6,37 +6,20 @@ public class Eggs
 		double dozenEggsprice = 3.25;
 		double singleEggsprice = 0.45;
 		int numb_of_Dozen = 12;
-	/* Here we print the variables used for prices and the variable for dozens
-	System.out.println(dozenEggsprice)
-	System.out.println(singleEggsprice)
-	System.out.println(numb_of_Dozen)
-	*/
+		System.out.println(dozenEggsprice)
+		System.out.println(singleEggsprice)
+		System.out.println(numb_of_Dozen)
 
     	Scanner imp = new Scanner (System.in);
     	System.out.print("How many eggs do you need?");
     	int eggs = imp.nextInt();
-	
-	count_of_dozens = (eggs/numb_of_Dozen)
-	count_of_loose_eggs = (eggs%numb_of_Dozen)
-
-    	/* Here we validate the number of dozens you have and how many single eggs you have
-	System.out.println(count_of_dozens)
-	System.out.println(count_of_loose_eggs)
-	*/
-
-	double total_cost_of_Dozens = count_of_dozens*dozenEggsprice;
-    	double total_cost_of_Singles = count_of_loose_eggs*singleEggsprice;   
-    	double total_Cost = (total_cost_of_Dozens + total_cost_of_Singles);
-
- 	/* Here we validate the expression for the costs of how many batched dozen and single eggs cost by multiplying the cost of a dozen by how many dozens you have and the number of singles by the cost of each egg
-	System.out.println(total_cost_of_Dozens);
-    	System.out.println(total_cost_of_Singles);
-    	System.out.println(total_Cost);
-	*/
-	   
+    	double total_of_Dozen = (eggs/numb_of_Dozen)*dozenEggsprice;
+    	double total_of_Single = (eggs%numb_of_Dozen)*singleEggsprice;   
+    	double total_Cost = (total_of_Dozen + total_of_Single);
+                   
  	System.out.println("You ordered " + eggs + " eggs "); 
- 	System.out.println("That's " + count_of_dozens + " dozen at $" + dozenEggsprice + " per dozen. "); 
- 	System.out.println("And that's " + count_of_loose_eggs + " loose eggs at $" + singleEggsprice + " cents each. ");
+ 	System.out.println("That's " + (total_of_Dozen) + " dozen at $" + dozenEggsprice + " per dozen. "); 
+ 	System.out.println("And that's " + (total_of_Single) + " loose eggs at $" + singleEggsprice + " cents each. ");
  	System.out.println("For a total of $" + total_Cost);
 	}
 }
